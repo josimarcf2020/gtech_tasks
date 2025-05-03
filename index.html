@@ -12,13 +12,13 @@
     </header>
     <main>
         <section id="tarefas">
-            <h2>Tarefas<button>Nova tarefa</button></h2>
+            <h2>Tarefas<button onclick="novaTarefa()">Nova Tarefa</button></h2>
             <h6>Nenhuma tarefa registrada</h6>
         </section>
-        <section id="overlay"></section>
-        <div class="modal">
+        <section id="overlay" onclick="fecharModal()"></section>
+        <div class="modal" id="criarTarefa">
             <form action="">
-                <h3>Criar Tarefa</h3>
+                <h3>Criar Tarefa<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAAAXNSR0IArs4c6QAAAfhJREFUWEft2M+rD1EYx/HXLRbsJLHzI+VmhZSdkqUFJUp0/4W70BULigUL8g9YKlnIH2BBWbDBwo+wwI27QLJQKBJzdL41vmbc8z1mpqZmVt++53me857POed5njlTevBM9YDRANnUKvVeyVWYw1YsbUqVijjf8Ajn8bZqnjol1+EeVrYINx76I7bj1fhAHeQVHOoQcDTV1ap56yCfYVP0vIsbLQLvws4Yfx7rU5V8WTK+iKMtQp7ByRj/PVYPkJlqD0qOC7ccX/FzQkU7VTIk/XM4iE8TgGZDzmJFnOhOYgoKkA/wAnvxJBG0DPkOa1JPd2L8P8xGkOHPsOxHcD0hULaSCbH/MilDjgYv4HiRB3/8I2A25A4sm5B0Iy5V+NwuGoj9+FATLxsyFPnQZDT1LGAf7lcEzIYsl8WmQD9jA0LpKz/ZkL1Qssk9eSvmzsb3ZM4SV53u0G2faOt0/y9k2H8zbefJ8nK/iVVkMfByxdlTdNjPF3OI46dxKv6eqOLkNL0BMpzUw13V7hzI0AV9SVSvkRSUA5nB99slO08OkE1VnF4o+RTT8Y27/O5+jbXjm7vucuBybFpzD0Ou37Wioz+QCrkZj+n0/jJ8wG3Bw1TIYLcbZ7ENS3KlSfD7HsGOFdctN6vse38/mSBCNyaDkk3p3AslfwF5LIwqDVQUogAAAABJRU5ErkJggg==" id="fechar" onclick="fecharModal()" alt=""/></h3>
                 <label for="titulo">Titulo</label>
                 <input type="text" id="titulo" name="titulo" placeholder="Digite o título da tarefa">
                 <label for="descricao">Descrição</label>
@@ -28,6 +28,7 @@
         </div>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
