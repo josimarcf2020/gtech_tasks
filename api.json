@@ -1,11 +1,6 @@
 {
   "tarefas": [
     {
-      "id": "9129",
-      "titulo": "Tarefa 1",
-      "descricao": "teste 1"
-    },
-    {
       "id": "325d",
       "titulo": "Fazer café da manhã",
       "descricao": "Colocar a chaleira com água no fogão para ferver e fazer café."
@@ -14,6 +9,36 @@
       "id": "d341",
       "titulo": "Deixar Valentina na escola",
       "descricao": "Providenciar o lanche dela e acompanhar ela até a entrada para as salas de aula."
+    },
+    {
+      "id": "8ad1",
+      "titulo": "Verificar os insumos para as marmitas",
+      "descricao": "Verificar a necessidade de comprar insumos e enviar as opções de marmitas para os clientes diários."
+    },
+    {
+      "id": "21f4",
+      "titulo": "Acompanhar as solicitações de almoço",
+      "descricao": "Verificar pelo Whatsapp as solicitações de almoço que chegam, iniciando o preparo imediatamente."
+    },
+    {
+      "id": "f49b",
+      "titulo": "Montar as marmitas dos clientes",
+      "descricao": "Montar as marmitas com as poções adequadas de cada cliente, nas marmitas."
+    },
+    {
+      "id": "c79b",
+      "titulo": "Entregar as marmitas prontas",
+      "descricao": "Acondicionar as marmitas adequadamente e providenciar a entrega."
+    },
+    {
+      "id": "3b76",
+      "titulo": "Buscar a Valentina na escola",
+      "descricao": "A partir das 11:30 ir buscar a Valentina na escola."
+    },
+    {
+      "id": "cfe6",
+      "titulo": "Fazer as tarefas da escola",
+      "descricao": "Verificar nos livros e cadernos quais são as tarefas do dia a fazer."
     }
   ]
 }
