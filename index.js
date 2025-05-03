@@ -9,11 +9,9 @@ function fecharModal() {
 }
 
 function buscarTarefas() {
-    console.log("Buscando tarefas...");
     fetch('http://localhost:3000/tarefas')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         popularTarefas(data);
     })
 }
@@ -34,3 +32,26 @@ function popularTarefas(listaDetarefas) {
         })
     }
 }
+
+function persistirTarefa() {
+    event.preventDefault();
+    let tarefa = {
+        titulo: titulo.value,
+        descricao: descricao.value
+    }
+
+    fetch('http://localhost:3000/tarefas', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(tarefa)
+    })
+    .then(response => response.json())
+    .then(data => {
+        fecharModal();
+        buscarTarefas();    
+    })
+    
+}
+
